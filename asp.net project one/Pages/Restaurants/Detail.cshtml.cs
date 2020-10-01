@@ -19,10 +19,14 @@ namespace asp.net_project_one.Pages.Restaurants
         {
             this.restaurantData = restaurantData;
         }
-        public void OnGet(int restaurantId)
+        public IActionResult OnGet(int restaurantId)
         {
-            Restaurant = new Restaurant();
-            Restaurant.Id = restaurantId;
+            Restaurant = restaurantData.GetById(restaurantId);
+            if(Restaurant == null)
+            {
+                return RedirectToPage("./NotFound");
+            }
+            return Page();
         }
     }
 }
