@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp.net project one", "asp.net project one\asp.net project one.csproj", "{8610BC97-7FC6-4810-9687-5519E4DD746D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp.net project one", "asp.net project one\asp.net project one.csproj", "{8610BC97-7FC6-4810-9687-5519E4DD746D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet project one.core", "aspnet project one.core\aspnet project one.core.csproj", "{3E473E83-72E8-4745-9734-0B0B5B21C612}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnet project one.core", "aspnet project one.core\aspnet project one.core.csproj", "{3E473E83-72E8-4745-9734-0B0B5B21C612}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet project one.data", "aspnet project one.data\aspnet project one.data.csproj", "{1BAD7A85-93B7-4780-B98E-D1CE257D8F27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnet project one.data", "aspnet project one.data\aspnet project one.data.csproj", "{1BAD7A85-93B7-4780-B98E-D1CE257D8F27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
