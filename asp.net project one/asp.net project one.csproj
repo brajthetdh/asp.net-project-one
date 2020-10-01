@@ -5,4 +5,8 @@
     <RootNamespace>asp.net_project_one</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\aspnet project one.data\aspnet project one.data.csproj" />
+  </ItemGroup>
+
 </Project>
