@@ -23,10 +23,10 @@ namespace asp.net_project_one.Pages.Restaurants
             this.config = config;
             this.restaurantData = restaurantData;
         }
-        public void OnGet()
+        public void OnGet(string searchTerm)
         {
             Message = config["Message"];
-            Restaurants = restaurantData.GetAll();
+            Restaurants = restaurantData.GetByName(searchTerm);
         }
     }
 }

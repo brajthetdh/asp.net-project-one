@@ -20,10 +20,18 @@ namespace aspnet_project_one.data
             };
         }
 
-        public IEnumerable<Restaurant> GetAll()
-        {
-            return restaurants.OrderBy(r => r.Name);
+        //public IEnumerable<Restaurant> GetAll()
+        //{
+        //    return restaurants.OrderBy(r => r.Name);
                    
+        //}
+
+        public IEnumerable<Restaurant> GetByName(string name = null)
+        {
+            return from r in restaurants
+                   where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
+                   orderby r.Name
+                   select r;
         }
     }
 }

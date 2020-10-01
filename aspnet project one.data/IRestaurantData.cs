@@ -5,6 +5,7 @@ namespace aspnet_project_one.data
 {
     public interface IRestaurantData
     {
-        IEnumerable<Restaurant> GetAll();
+       // IEnumerable<Restaurant> GetAll();
+        IEnumerable<Restaurant> GetByName(string name);
     }
 }
