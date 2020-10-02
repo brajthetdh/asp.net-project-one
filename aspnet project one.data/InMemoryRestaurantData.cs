@@ -20,6 +20,11 @@ namespace aspnet_project_one.data
             };
         }
 
+        public int Commit()
+        {
+            return 0;
+        }
+
         public IEnumerable<Restaurant> GetAll()
         {
             return restaurants.OrderBy(r => r.Name);
@@ -37,6 +42,18 @@ namespace aspnet_project_one.data
                    where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
                    orderby r.Name
                    select r;
+        }
+
+        public Restaurant Update(Restaurant updateRestaurant)
+        {
+            var restaurant = restaurants.SingleOrDefault(r => r.Id == updateRestaurant.Id);
+            if(restaurant != null)
+            {
+                restaurant.Name = updateRestaurant.Name;
+                restaurant.Location = updateRestaurant.Location;
+                restaurant.Cuisine = updateRestaurant.Cuisine;
+            }
+            return restaurant;
         }
     }
 }

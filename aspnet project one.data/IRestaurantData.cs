@@ -8,5 +8,7 @@ namespace aspnet_project_one.data
         IEnumerable<Restaurant> GetAll();
         IEnumerable<Restaurant> GetByName(string name);
         Restaurant GetById(int id);
+        Restaurant Update(Restaurant updateRestaurant);
+        int Commit();
     }
 }

@@ -27,7 +27,12 @@
         <td>@restaurant.Cuisine</td>
         <td>
             <a class="btn btn-lg bg-success" asp-page="./Detail" asp-route-restaurantId="@restaurant.Id">
-                <i class="bg-dark"></i>
+                Detail
+            </a>
+        </td>
+        <td>
+            <a class="btn btn-lg bg-success" asp-page="./Edit" asp-route-restaurantId="@restaurant.Id">
+                Edit
             </a>
         </td>
     </tr>
