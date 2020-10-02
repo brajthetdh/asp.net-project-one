@@ -1,2 +1,2 @@
 # asp.net-project-one
-hi
+Technology used - Razor, ASP.NET core, C#
